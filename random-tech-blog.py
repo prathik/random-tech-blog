@@ -49,5 +49,7 @@ class LoadRandom():
     def randomTechBlog(self):
         return random.choice(self.feedList).getUrl()
 
-lr = LoadRandom("https://raw.githubusercontent.com/kilimchoi/engineering-blogs/master/engineering_blogs.opml")
-print lr.openTechBlogInBrowser()
+if __name__ == "__main__":
+    lr = LoadRandom("https://raw.githubusercontent.com/kilimchoi/" +
+                    "engineering-blogs/master/engineering_blogs.opml")
+    lr.openTechBlogInBrowser()
